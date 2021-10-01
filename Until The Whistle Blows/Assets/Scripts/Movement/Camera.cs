@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    public float mouseSpeed = 100f;
-    public Transform playerBody;
+    public float cameraDrift = 0.2f;
+    Transform playerBody;
     float xRotation = 0f;
     public float V, H, speed, x, y;
     public bool inspecting;
 
     void Start()
     {
-      //  y = Mathf.Clamp(transform.rotation.y, 22, 106);
-
+        //  y = Mathf.Clamp(transform.rotation.y, 22, 106);
+        playerBody = GameObject.Find("Player").transform;
     }
     void Update()
     {
+        /*
         H = transform.eulerAngles.z;
         H = 0;
         if (!inspecting)
@@ -39,7 +40,9 @@ public class Camera : MonoBehaviour
                 transform.Rotate(-V, 0f, 0f);
             }
         }
+        */
 
+        transform.position = new Vector3(Mathf.Lerp(transform.position.x, playerBody.position.x, cameraDrift), 13.0f, Mathf.Lerp(transform.position.z, playerBody.position.z - 5.0f, cameraDrift));
 
        
 
