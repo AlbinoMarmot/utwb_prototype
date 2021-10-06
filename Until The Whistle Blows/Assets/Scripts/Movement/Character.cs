@@ -41,7 +41,8 @@ public class Character : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     private Vector3 startpos;
     public Text displayamount;
     //sets what supply character grabs
-   public bool F, S, A;
+    public ResourceTracker.ResourceType resource;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -55,7 +56,7 @@ public class Character : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     }
     private void Update()
     {
-        if (F)
+        /*if (F)
         {
             displayamount.GetComponent<Text>().text = "Food";
         }
@@ -66,6 +67,23 @@ public class Character : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
         else if (A)
         {
             displayamount.GetComponent<Text>().text = "Ammo";
+        }*/
+
+        switch(resource)
+        {
+            case ResourceTracker.ResourceType.Food:
+                displayamount.GetComponent<Text>().text = "Food";
+                break;
+            case ResourceTracker.ResourceType.Supplies:
+                displayamount.GetComponent<Text>().text = "Supplies";
+                break;
+            case ResourceTracker.ResourceType.Medicine:
+                displayamount.GetComponent<Text>().text = "Medicine";
+                break;
+            default:
+                Debug.Log("Your pc has ran into promble");
+                break;
+
         }
     }
     public void OnBeginDrag(PointerEventData eventData)

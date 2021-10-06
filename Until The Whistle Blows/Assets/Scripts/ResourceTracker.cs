@@ -74,14 +74,20 @@ public class ResourceTracker : MonoBehaviour
             resourceIndicators[i].text = ((ResourceType)i).ToString() + ": " + armyResources[i].ToString();
         }
 
-
-        CreateResourceEvent();
+        //CreateResourceEvent();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void ResolveOrder(ResourceType r, int amount)
+    {
+        armyResources[(int)r] += amount;
+
+        resourceIndicators[(int)r].text = r.ToString() + ": " + armyResources[(int)r].ToString();
     }
 
     //creates a new event

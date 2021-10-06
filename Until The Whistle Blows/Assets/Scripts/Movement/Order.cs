@@ -16,6 +16,7 @@ public class Order : MonoBehaviour
     {
         
     }
+
     public void OrderUp()
     {
         menu1.SetActive(false);

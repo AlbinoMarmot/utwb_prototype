@@ -10,13 +10,13 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
     bool assigned;
     public int RAmount;
     public Text displaytxt;
-    public testchange tc;
+    ResourceTracker rt;
 
     private void Start()
     {
         RAmount = Random.Range(2, 7);
         displaytxt.GetComponent<Text>().text = RAmount.ToString();
-        tc = tc.GetComponent<testchange>();
+        rt = GameObject.Find("Canvas").GetComponent<ResourceTracker>();
     }
     private void Update()
     {
@@ -31,7 +31,7 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
         {
             eventdata.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
             assigned = true;
-            if (eventdata.pointerDrag.GetComponent<Character>().F)
+            /*if (eventdata.pointerDrag.GetComponent<Character>().F)
             {
                 tc.Sfood = tc.Sfood + RAmount;
             }
@@ -42,7 +42,9 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
             else if (eventdata.pointerDrag.GetComponent<Character>().A)
             {
                tc.Sammo = tc.Sammo + RAmount;
-            }
+            }*/
+
+            rt.ResolveOrder(eventdata.pointerDrag.GetComponent<Character>().resource, RAmount);
 
         }
     }
