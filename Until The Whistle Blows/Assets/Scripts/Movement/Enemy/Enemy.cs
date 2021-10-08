@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class Enemy : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("GameOver");
+            GameOver();
         }
     }
     void PatrolFinished()
@@ -52,6 +53,6 @@ public class Enemy : MonoBehaviour
     }
     void GameOver()
     {
-
+        SceneManager.LoadScene("Level1");
     }
 }
