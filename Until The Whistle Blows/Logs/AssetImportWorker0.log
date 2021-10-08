@@ -25604,3 +25604,39 @@ System memory in use after: 53.7 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2013.
 Total: 1.725100 ms (FindLiveObjects: 0.132000 ms CreateObjectMapping: 0.040300 ms MarkObjects: 1.502700 ms  DeleteObjects: 0.049400 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 1277.205745 seconds.
+  path: Assets/Scenes/MovementTest.unity
+  artifactKey: Guid(ab5d74568cdcd4c448f9c4ad9318b67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MovementTest.unity using Guid(ab5d74568cdcd4c448f9c4ad9318b67b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e602446429f8d56dad9bc2dac6adccf3') in 0.019762 seconds
+  Import took 0.022362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.942375 seconds.
+  path: Assets/Materials/Brown.mat
+  artifactKey: Guid(e1f2ac3e27e80d648878b8b588ce607c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Brown.mat using Guid(e1f2ac3e27e80d648878b8b588ce607c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26f01bd17bcfd5b973909f5f206dc42') in 0.059909 seconds
+  Import took 0.062163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.102225 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(08e43d6b34ca5a34aa10885ddf1b6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(08e43d6b34ca5a34aa10885ddf1b6e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15cc12aa9de2d32192a6e9b18123b231') in 0.009231 seconds
+  Import took 0.013151 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 53.8 MB.
+System memory in use after: 53.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2014.
+Total: 3.072600 ms (FindLiveObjects: 0.243500 ms CreateObjectMapping: 0.062400 ms MarkObjects: 2.686900 ms  DeleteObjects: 0.079000 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
