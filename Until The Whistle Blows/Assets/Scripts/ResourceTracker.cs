@@ -20,6 +20,7 @@ public class ResourceTracker : MonoBehaviour
 
     //All game objects that should only appear when an event is pending should go here
     [SerializeField] GameObject[] eventStuff;
+    [SerializeField] GameObject[] menuStuff;
     
     protected class EventOption
     {
@@ -105,6 +106,11 @@ public class ResourceTracker : MonoBehaviour
                 g.SetActive(true);
             }
 
+            foreach(GameObject g in menuStuff)
+            {
+                g.SetActive(false);
+            }
+
             DescriptiveText.text = "Option 1: Gain " + options[0].getResourceValue(0).ToString() + ' ' + options[0].getResourceName(0) + " and lose " + (options[0].getResourceValue(1) * -1).ToString() + ' ' + options[0].getResourceName(1) + '.' + '\n' + "Option 2: Gain " + options[1].getResourceValue(0).ToString() + ' ' + options[1].getResourceName(0) + " and lose " + (options[1].getResourceValue(1) * -1).ToString() + ' ' + options[1].getResourceName(1) + '.';
 
             eventPending = true;
@@ -128,12 +134,17 @@ public class ResourceTracker : MonoBehaviour
             }
             else
             {
-                resourceIndicators[(int)options[option].getResource(0)].text = options[option].getResourceName(0) + armyResources[(int)options[option].getResource(0)].ToString();
-                resourceIndicators[(int)options[option].getResource(1)].text = options[option].getResourceName(1) + armyResources[(int)options[option].getResource(1)].ToString();
+                resourceIndicators[(int)options[option].getResource(0)].text = options[option].getResourceName(0) + ": " + armyResources[(int)options[option].getResource(0)].ToString();
+                resourceIndicators[(int)options[option].getResource(1)].text = options[option].getResourceName(1) + ": " + armyResources[(int)options[option].getResource(1)].ToString();
 
                 foreach(GameObject g in eventStuff)
                 {
                     g.SetActive(false);
+                }
+
+                foreach(GameObject g in menuStuff)
+                {
+                    g.SetActive(true);
                 }
 
                 eventPending = false;
