@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class testchange : MonoBehaviour
 {
@@ -47,5 +48,9 @@ public class testchange : MonoBehaviour
         a1.GetComponent<Text>().text = ammo.amount.ToString();
 
       
+    }
+    public void Nextlvl()
+    {
+        SceneManager.LoadScene("MovementTest");
     }
 }
