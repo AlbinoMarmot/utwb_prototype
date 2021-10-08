@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 33526
+  controlID: 37
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 33475
+  controlID: 38
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 33476
+  controlID: 39
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 1296feff3296feff4296feff5496feffae96feff189efeff369efeff289ffeff489ffefff49ffeff02a0feffcaabfeffe2b3feff2eb6feff0eb7feff3cb7feff00bafeffd2bafeff14c2feff2cd0fefffce7feff1611ffff4a27ffff6471ffffc87cfffffc7effff9a89ffff66efffff48fbffff4ed300009cd30000e8d300005ed4000028d500003cd50000a60b0100380d0100ca1c0100181d0100b41d0100021e0100741e0100781e0100941e010054600100a2600100e6620100
+      m_SelectedIDs: ec3c0000
+      m_LastClickedID: 15596
+      m_ExpandedIDs: 62f9ffff1efbffffc03c00000e3d0000383d0000aa3d0000f43e0000083f0000f85a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 10}
+        m_ClientGUIView: {fileID: 8}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 122.289955, y: 30.142801, z: 96.32633}
+    m_Target: {x: 550.5, y: 269.9, z: 0}
     speed: 2
-    m_Value: {x: 122.289955, y: 30.142801, z: 96.32633}
+    m_Value: {x: 550.5, y: 269.9, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -510,11 +510,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.030847736, y: 0.3814165, z: -0.012568163, w: 0.92394906}
     speed: 2
-    m_Value: {x: 0.03082469, y: 0.38275036, z: -0.012612718, w: 0.92325133}
+    m_Value: {x: 0.030843573, y: 0.38136503, z: -0.012566467, w: 0.92382437}
   m_Size:
-    m_Target: 2.933169
+    m_Target: 613.10376
     speed: 2
-    m_Value: 2.9331686
+    m_Value: 613.10376
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -577,22 +577,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Movement
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Movement
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Unity\utwb_prototype\Until The Whistle Blows
+  m_LastProjectPath: C:\Users\notsl\Source\UntilTheWhistleBlows\utwb_prototype\Until
+    The Whistle Blows
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 503d0000
-    m_LastClickedID: 15696
-    m_ExpandedIDs: 00000000d83c0000523d000000ca9a3b
+    m_SelectedIDs: 006a0000
+    m_LastClickedID: 27136
+    m_ExpandedIDs: 000000004c3f0000543f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,7 +621,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d83c000000ca9a3b
+    m_ExpandedIDs: 000000004c3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,7 +734,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 45
+  m_LastVerticalScrollValue: 563
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

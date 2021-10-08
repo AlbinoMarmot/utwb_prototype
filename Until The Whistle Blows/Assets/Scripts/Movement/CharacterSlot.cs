@@ -12,6 +12,8 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
     public Text displaytxt;
     ResourceTracker rt;
 
+    ResourceTracker.ResourceType assignment;
+
     private void Start()
     {
         RAmount = Random.Range(2, 7);
@@ -44,13 +46,21 @@ public class CharacterSlot : MonoBehaviour, IDropHandler
                tc.Sammo = tc.Sammo + RAmount;
             }*/
 
-            rt.ResolveOrder(eventdata.pointerDrag.GetComponent<Character>().resource, RAmount);
+            assignment = eventdata.pointerDrag.GetComponent<Character>().resource;
+            rt.ResolveOrder(assignment, RAmount);
 
         }
     }
-    public void ResetAssign()
+    public void ResetAssign(bool refundResource)
     {
         assigned = false;
+
+        if(refundResource)
+        {
+            rt.ResetOrder(assignment, RAmount);
+        }
+
+        assignment = ResourceTracker.ResourceType.None;
     }
 
 

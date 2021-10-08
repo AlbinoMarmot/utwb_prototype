@@ -10,7 +10,8 @@ public class ResourceTracker : MonoBehaviour
         Food = 0,
         Supplies,
         Medicine,
-        Morale
+        Morale,
+        None
     }
 
     static public int[] armyResources;
@@ -87,6 +88,13 @@ public class ResourceTracker : MonoBehaviour
     public void ResolveOrder(ResourceType r, int amount)
     {
         armyResources[(int)r] += amount;
+
+        resourceIndicators[(int)r].text = r.ToString() + ": " + armyResources[(int)r].ToString();
+    }
+
+    public void ResetOrder(ResourceType r, int amount)
+    {
+        armyResources[(int)r] -= amount;
 
         resourceIndicators[(int)r].text = r.ToString() + ": " + armyResources[(int)r].ToString();
     }
